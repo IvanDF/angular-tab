@@ -1,4 +1,4 @@
-// Interface for tab contents
+// Tab interfaces
 export interface ITabList {
   id: number;
   menu: ITabListMenu;
