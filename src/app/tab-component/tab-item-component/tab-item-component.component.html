@@ -1,0 +1,15 @@
+<ul class="tab-menu">
+  <div class="tab-menu-foreground"></div>
+  <li
+    *ngFor="let item of itemsList; index as i"
+    (click)="
+      getTabSelected(tabList[i].id, i); changePageTitle(tabList[i].info.title)
+    "
+    class="tab-menu-item"
+    [ngClass]="i === idTab ? 'active' : ''"
+  >
+    <a href="#" class="tab-menu-item-link">
+      <img [src]="item.icon" width="25" [alt]="item.label" />
+    </a>
+  </li>
+</ul>

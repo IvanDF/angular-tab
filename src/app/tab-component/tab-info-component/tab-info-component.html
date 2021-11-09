@@ -1,0 +1,16 @@
+<div class="tab-info">
+  <h2 class="tab-info-title">{{ activeTabText.title }}</h2>
+  <hr class="tab-info-separator" />
+  <div class="tab-info-content">
+    <h3 class="tab-info-content-subtitle" *ngIf="activeTabText.subtitle">
+      {{ activeTabText.subtitle }}
+    </h3>
+    <img
+      class="tab-info-content-image"
+      *ngIf="activeTabText.image"
+      [src]="activeTabText.image"
+      [alt]="activeTabText.title"
+    />
+    <p class="tab-info-content-text">{{activeTabText.text}}</p>
+  </div>
+</div>

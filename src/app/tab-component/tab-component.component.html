@@ -1,0 +1,14 @@
+<!-- tab app-tab-component https://hype4.academy/tools/glassmorphism-generator -->
+
+<div class="tab-content">
+  <div class="tab-content-text">
+    <app-tab-info-component
+      [idTabSelected]="tabSelected"
+    ></app-tab-info-component>
+  </div>
+  <div class="tab-content-list">
+    <app-tab-item-component
+      (tabSelected)="tabSelectedHandler($event)"
+    ></app-tab-item-component>
+  </div>
+</div>

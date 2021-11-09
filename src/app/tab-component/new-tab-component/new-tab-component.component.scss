@@ -1,0 +1,17 @@
+.new-tab {
+  right: -70px;
+  bottom: 85px;
+  position: absolute;
+  padding: 40px 25px;
+  background: rgba(74, 144, 226, 0.75);
+  border-radius: 20%;
+  z-index: 5;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  &:hover {
+    background: rgba(74, 144, 226, 0.95);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(74, 144, 226, 0.95));
+  }
+}
